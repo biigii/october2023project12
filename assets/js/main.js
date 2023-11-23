@@ -1,88 +1,48 @@
 
-// alert("hello world");
-// console.log('hello javascript');
-// console.log(2000);
-// console.log(1000+5000);
-// console.log(5*5)
 
-// var
-// const
-// let
+// console.log(window.document);
+// console.log(document.head);
+// console.log(document.body)
 
-// declaring a variable
-// = symbol is for assignment and not for comparison
-// var color = 'red';
+// document.body.style.backgroundColor = 'red';
+// document.body.style.border = "20px solid";
 
-// console.log(color);
-// console.log(color+color);
+// let htmlBody = document.body;
 
-// declare
-// var age;
+// htmlBody.style.background = "#f11"
+// htmlBody.style.border = "10px dashed"
 
-// age = 100;
-// console.log(age);
+//  this array has 3 elements, first second and third
+// they each have index 0 , 1 and 2
+// so apple is at index 0
+const mySampleArray = ['apple', 'orange', 'kiwi']
+// console.log(mySampleArray[2])
 
-// var age;
-// age = 10;
-// console.log(age);
+document.getElementById("heading").style.color = "blue";
+document.querySelector("#heading").style.color = "blue";
+document.getElementById("heading").style.border = "5px solid red"
+document.getElementById("heading").style.borderRadius = '20px'
 
-// const and let
-// you must initialize it and you can not assign new value 
-const age = 100;
-// age = 10;
-// console.log(age);
+const myList = document.getElementsByClassName('list')
+myList[0].style.border = '2px solid'
+// console.log(myList)
 
-//  let
-let color;
-// let color;
-color = '#f11'
-color = "blue"
+const paragraphs = document.getElementsByTagName("p")
+// console.log(paragraphs)
+paragraphs[1].style.fontSize = '1.5em'
 
-let backgroundColor;
-let fontSize;
 
-console.log(color);
 
-// types of variables
+// const myFruitsList = document.querySelector('.list');
+const myFruitsList = document.querySelectorAll('.list')
+console.log(myFruitsList)
 
-// string
-const str = "hello world"
-const helloWorld = 'hello world'
+// const myImage = document.querySelector('img');
+// const myImage = document.querySelector("#photo")
+// const myImage = document.querySelector('.image');
+const myImage = document.querySelector('[alt="picture of grapes"]');
 
-// numbers, integers or floats
-// snake casing my_awesome_variable
-// camel casing
-let myAwesomeVariable;
+myImage.style.border = '10px solid #f11'
 
-let a = 100; // this is bad
-let myNum = 1000;
-
-// boolean which is true or false, 0 or 1, on or off
-const isDay = false
-const isValidCode = true;
-const value = false;
-
-// arrays or lists which is a series of things
-
-const list = [1, 2, 3, 4, 5];
-let fruits = ['apple', 'Orange', 'KIWI'];
-let myMixedArray = [100, 'hello', true, 0]
-
-console.log(fruits);
-
-// object
-const user = {
-  name: 'john',
-  age: 100,
-  isMarried: true,
-  address: {
-    no: 123,
-    street: 'street road',
-    city: 'christchurch'
-  }
-}
-
-console.log(user.address);
-console.log(user.name)
-console.log(user.address.city)
-
+const h1 = document.querySelector("[data-h1]")
+h1.style.textAlign = 'center'
