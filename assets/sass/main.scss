@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+}
+
+body {
+  background-color: #ddd;
+}
+
+p {
+  background-color: #f55;
+  color: #fff;
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+article {
+  height: 100vh;
+  gap: 5px;
+  display: grid;
+  // grid-template-columns: 100px 400px 250px;
+  // grid-template-rows: 300px 100px 200px;
+  // grid-template-columns: 200px 200px 200px;
+  // grid-template-columns: repeat(3, 200px);
+  // grid-template-columns: 1fr 1fr 1fr;
+  // grid-template-rows: 100px 1fr auto;
+  grid-template-columns: 10fr 20fr 30fr;
+  // grid-auto-flow: column;
+}
