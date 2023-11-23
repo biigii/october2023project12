@@ -1,3 +1,12 @@
+$color: #f11;
+// :root {
+//   --color: #000
+// }
+
 h1 {
-  color: #f11;
+  color: $color;
+}
+
+body {
+  background-color: $color;;
 }
